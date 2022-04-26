@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <!-- .wrap>.header>.logo>img[src=images/logo.png]^.menu>ul>li*4>ul>li*3 -->
+    <!-- .wrap>.header+.slide+.contents+.footer|c -->
+    
+    <!-- #modal>.modal_inner>h2+p+button|c -->
+    <!-- .wrap>(.header>.logo+.nav)+(.slide>div*3>img)+(.contents>.board+.banner+.shortcut)+(.footer>.logo2+.copy+.sns)|c -->
+    <div id="modal" class="d_none">
+        <div class="modal_inner">
+            <h2>애스크로 서비스 변경 약관을 확인하세요.</h2>
+            <p>안녕하십니까? 고객님.</p>
+            <p>저희 저스트 쇼핑몰을 이용해 주셔서 언제나 감사합니다.
+            본사에서 계약을 맺고 있는 하나은행 애스크로 서비스의 이용약관에 변경이 있어서 공지하여 드립니다. 변경사항이
+            광고수신 및 개인정보 수집에 관한 변경사항이라 본사와는 관련이 없으나 결제시 고객님의 정보가 수집되는 부분이라하니
+            약관 변경에 관한 사항을 확인하시기 바랍니다.</p>
+            <p>언제나 특색있고 멋진 상품으로 찾아뵙겠습니다.</p>
+            <p>감사합니다.</p>
+            <button>&times;닫기</button>
+        </div>
+        <!-- /.modal_inner -->
+    </div>
+    <!-- /#modal -->
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="just쇼핑몰">
+                </a>
+            </div>
+            <!-- /.logo -->
+            <div class="nav">
+                <!-- ul#gnb>li*4>a[href=#]+(ul.lnb>li*4>a[href=#])|c -->
+                <ul id="gnb">
+                    <li>
+                        <a href="#">탑</a>
+                        <ul class="lnb">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                        <!-- /.lnb -->
+                    </li>
+                    <li>
+                        <a href="#">아우터</a>
+                        <ul class="lnb">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                        <!-- /.lnb -->
+                    </li>
+                    <li>
+                        <a href="#">팬츠</a>
+                        <ul class="lnb">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                        <!-- /.lnb -->
+                    </li>
+                    <li>
+                        <a href="#">악세사리</a>
+                        <ul class="lnb">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                        <!-- /.lnb -->
+                    </li>
+                </ul>
+                <!-- /#gnb -->
+            </div>
+            <!-- /.nav -->
+        </div>
+        <!-- /.header -->
+        <div class="slide">
+            <div id="items">
+                <div><img src="images/slide01.jpg" alt="slide"></div>
+                <div><img src="images/slide02.jpg" alt="slide"></div>
+                <div><img src="images/slide03.jpg" alt="slide"></div>
+            </div>
+        </div>
+        <!-- /.slide -->
+        <div class="contents">
+            <div class="board">
+                <div class="board_title">
+                    <a href="#" class="active">공지사항</a>
+                    <a href="#">갤러리</a>
+                </div>
+                <!-- /.board_title -->
+                <div class="board_list">
+                    <ul class="news">
+                        <li>애스크로 서비스 변경 약관을 확인하세요</li>
+                        <li>배송 택배사 변경 및 배송방식 변경에 따른 공지</li>
+                        <li>여름 이월상품 정리 세일 안내</li>
+                        <li>여름 바캉스 상품 정리 세일 안내</li>
+                        <li>반품 및 교환 조건 변경 공지</li>
+                    </ul>
+                    <!-- /.notice -->
+                    <ul class="gallery d_none">
+                        <li><a href="#"><img src="images/gallery01.gif" alt=""></a></li>
+                        <li><a href="#"><img src="images/gallery02.gif" alt=""></a></li>
+                        <li><a href="#"><img src="images/gallery03.gif" alt=""></a></li>
+                    </ul>
+                    <!-- /.gallary -->
+                </div>
+            </div>
+            <!-- /.board -->
+            <div class="banner">
+                <a href="#"><img src="images/banner.jpg" alt="banner"></a>
+            </div>
+            <!-- /.banner -->
+            <div class="shortcut">
+                <ul>
+                    <li><a href="#"><img src="images/icon_01.png" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="images/icon_02.png" alt="결재 계좌안내"></a></li>
+                    <li><a href="#"><img src="images/icon_03.png" alt="운영시간안내"></a></li>
+                </ul>
+            </div>
+            <!-- /.shortcut -->
+        </div>
+        <!-- /.contents -->
+        <div class="footer">
+            <div class="logo2">
+                <a href="#"><img src="images/logo2.png" alt="just쇼핑몰"></a>
+            </div>
+            <!-- /.logo2 -->
+            <div class="copy">
+                <p>JUST Shop | 주소 : 부산광역시 부산진구 초읍동 성지로 84 | TEL.051-456-2580 | FAX.051-456-7890</p>
+                <p>이사이트의 모든 이미지와 컨텐츠의 불법도용 및 복제를 금지합니다. - 저스트쇼핑몰</p>
+            </div>
+            <!-- /.copy -->
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns_01.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/sns_02.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="images/sns_03.png" alt="Kakaostory"></a></li>
+                </ul>
+            </div>
+            <!-- /.sns -->
+        </div>
+        <!-- /.footer -->
+    </div>
+    <!-- /.wrap -->
+    <script src="script/main.js"></script>
+</body>
+</html>
